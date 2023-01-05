@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <form id="formRegister" data-netlify="true">
+        <div>
+            <label for="nameUser">Ingresa tu nombre</label>
+            <input type="text" name="nameUser" id="nameUser" placeholder="Escribe">
+        </div>
+
+        <div>
+            <label for="ageUser">Ingresa tu edad</label>
+            <input type="number" name="ageUser" id="ageUser" placeholder="Escribe">
+        </div>
+
+        <div>
+            <label for="emailUser">Ingresa tu correo</label>
+            <input type="email" name="emailUser" id="emailUser" placeholder="@email.com">
+        </div>
+
+        <div>
+            <label for="pass1">Ingresa tu contraseña</label>
+            <input type="password" name="pass1" id="pass1" placeholder="*****">
+        </div>
+
+        <div>
+            <label for="pass2">Confirma tu contraseña</label>
+            <input type="password" name="pass2" id="pass2" placeholder="*****">
+        </div>
+
+        <div>
+            <label for="dateBorn">Ingresa tu fecha de naciemiento</label>
+            <input type="date" name="dateBorn" id="dateBorn">
+        </div>
+
+        <div>
+            <input type="checkbox" id="termUser" name="termUser">
+            <label for="termUser">Acepats terminos y condiciones</label>
+        </div>
+
+        <div>
+            <label for="">Seleciona tu Pais</label>
+            <select name="countruName" id="countruName">
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+                <option value="escuador">Ecuador</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="peru">Peru</option>
+                <option value="RD">Republica Dominicana</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Seleccion su genero</p>
+
+            <div>
+                <input type="radio" value="M" name="gender" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" value="F" name="gender" id="femeninio">
+                <label for="femeninio">Femeninio</label>
+            </div>
+            
+            <div>
+                <input type="radio" value="NA" name="gender" id="NA">
+                <label for="NA">Prefiero no decirlo</label>
+            </div>
+            
+        </div>
+
+        <div>
+            <label for="coments">Deajnos tus comentarios</label>
+            <br>
+            <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+        </div>
+
+        <button>Enviar</button>
+    </form>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html>
